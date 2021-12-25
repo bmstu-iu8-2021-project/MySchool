@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddStudentWindow</class>
+ <widget class="QMainWindow" name="AddStudentWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>810</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Adding student</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(250, 218, 221)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableView" name="tableView">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 236, 236);
+font: 63 15pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 218, 221);
+font: 63 15pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+      </property>
+      <property name="title">
+       <string>Enter data</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="NameLabel">
+         <property name="styleSheet">
+          <string notr="true">font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>&amp;Name</string>
+         </property>
+         <property name="buddy">
+          <cstring>NameLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="SurnameLineEdit">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="LanguageLabel">
+         <property name="styleSheet">
+          <string notr="true">font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>&amp;Language</string>
+         </property>
+         <property name="buddy">
+          <cstring>LangComboBox</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QComboBox" name="LevelComboBox">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Beginner</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Pre-Intermediate</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Intermediate</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Upper Intermediate</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Advanced</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Proficiency</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QComboBox" name="TeacherComboBox">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Native</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Non-Native</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="NameLineEdit">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="TeacherLabel">
+         <property name="styleSheet">
+          <string notr="true">font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>&amp;Teacher</string>
+         </property>
+         <property name="buddy">
+          <cstring>TeacherComboBox</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="SurnameLabel">
+         <property name="styleSheet">
+          <string notr="true">font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>&amp;Surname</string>
+         </property>
+         <property name="buddy">
+          <cstring>SurnameLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="PriceLabel">
+         <property name="styleSheet">
+          <string notr="true">font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>&amp;Price</string>
+         </property>
+         <property name="buddy">
+          <cstring>PriceLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLineEdit" name="PriceLineEdit">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QComboBox" name="GroupComboBox">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="LevelLabel">
+         <property name="styleSheet">
+          <string notr="true">font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>&amp;Level</string>
+         </property>
+         <property name="buddy">
+          <cstring>LevelComboBox</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="GroupLabel">
+         <property name="styleSheet">
+          <string notr="true">font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>&amp;Group</string>
+         </property>
+         <property name="buddy">
+          <cstring>GroupComboBox</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QComboBox" name="LangComboBox">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="AddButton">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(250, 218, 221);
+font: 63 25pt &quot;Yrsa&quot;;
+color: rgb(176, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>&amp;Add</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>640</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>NameLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>AddStudentWindow</receiver>
+   <slot>AddButtonSetEnabled()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>361</x>
+     <y>211</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>205</x>
+     <y>52</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SurnameLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>AddStudentWindow</receiver>
+   <slot>AddButtonSetEnabled()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>442</x>
+     <y>242</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PriceLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>AddStudentWindow</receiver>
+   <slot>AddButtonSetEnabled()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>438</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>376</x>
+     <y>378</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AddStudentWindow</receiver>
+   <slot>AddButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>491</x>
+     <y>434</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>402</x>
+     <y>434</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>AddButtonSetEnabled()</slot>
+  <slot>AddButtonClicked()</slot>
+  <slot>CancelButtonClicked()</slot>
+ </slots>
+</ui>
